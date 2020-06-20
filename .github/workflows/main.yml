@@ -26,7 +26,7 @@ jobs:
       with:
         version:12
         
-        -name: GitHub action for yarn
+        -name: Github action for yarn
          uses: Borales/action-yarn@v2.1.0
          with:
          # yarn command 
