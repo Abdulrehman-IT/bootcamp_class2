@@ -32,11 +32,11 @@ jobs:
     - name: creating build
       run : yarn build
           
-          -name: installing surge
-           run: npm install -g surge
+    - name: installing surge
+      run: npm install -g surge
            
-           -name: deploying on surge 
-            run: surge ./build http://bootcamp33.surge.sh/ --token ${{ secrets.SURGE-TOKEN}}
+    - name: deploying on surge 
+      run: surge ./build http://bootcamp33.surge.sh/ --token ${{ secrets.SURGE-TOKEN}}
             
          
           
